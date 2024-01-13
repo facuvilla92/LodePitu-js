@@ -4,7 +4,7 @@ let intento = 1;
 while (verificar && intento <= 3) {
     let nombreUsuario = prompt("Ingrese su nombre");
 
-    if (nombreUsuario == "" || null) {
+    if (nombreUsuario === "" || nombreUsuario === null) {
         alert("Por favor, escriba un nombre de usuario real. Le quedan " + (3 - intento) + " intentos.");
         intento++;
     } else {
